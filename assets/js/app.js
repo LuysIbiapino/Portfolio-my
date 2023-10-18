@@ -34,6 +34,8 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-submit.addEventListener("click",() =>{
-  window.alert("Email enviado")
-});
+document.addEventListener("DOMContentLoaded", ()=>{
+  document.getElementById("contact-form").addEventListener("submit", ()=>{
+    window.alert("Email Enviado Com Sucesso")
+  }) 
+})

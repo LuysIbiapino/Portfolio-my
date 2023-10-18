@@ -147,64 +147,62 @@
       </div>
     </section>
 
-    <!-- Sessão de Contato -->
-    <section class="contact" id="contact">
-      <h2>Entre em contato comigo</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
+<!-- Seção de Contato -->
+<section class="contact" id="contact">
+  <h2>Entre em contato comigo</h2>
+  <div class="contact-form-container">
+    <div class="contact-form">
 
-          <!-- Após enviador as informações no formulario o usuario sera redirecionado para uma pagina de confirmação -->
-          <form action="https://formspree.io/f/xgejrjkq" method="POST">
-            <div class="form-control">
-
-             <!-- Formulario para entrar em contato através de Email -->
-              <label for="name">Nome</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Insira seu Nome"
-                class="input-field"
-                required
-              />
-            </div>
-
-            
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Insira seu Email"
-                class="input-field"
-                required
-              />
-            </div>
-
-            <div class="form-control">
-              <label for="message">Mensagem</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Insira sua Mensagem"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <!--Botão para  enviar  as informações descritas em  no formulario-->
-            <input
-              type="submit"
-              value="Enviar"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+      <!-- Formulário de Contato -->
+      <form action="https://formspree.io/f/xgejrjkq" method="POST" id="contact-form">
+        <div class="form-control">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Insira seu Nome"
+            class="input-field"
+            required
+          />
         </div>
-      </div>
-    </section>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Insira seu Email"
+            class="input-field"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Insira sua Mensagem"
+            name="message"
+            class="input-field"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Botão de Envio -->
+        <input
+          type="submit"
+          value="Enviar"
+          id="submit-btn"
+          class="submit-btn"
+        />
+      </form>
+    </div>
+  </div>
+</section>
 
     <!-- Minhas redes sociais  -->
     <div class="socials">
