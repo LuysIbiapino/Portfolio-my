@@ -10,10 +10,13 @@ const scrollUp = document.querySelector("#scroll-up");
 // todos os Links então âncorados na classe "nav-link"
 const navLink = document.querySelectorAll(".nav-link");
 
+const submit = document.querySelector("submit-btn");
+
 //Funcão do  menu suspense
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
+
 
 // Fecha o  menu suspense após clicar em algum link
 navLink.forEach((link) =>
@@ -29,4 +32,8 @@ scrollUp.addEventListener("click", () => {
     left: 0,
     behavior: "smooth",
   });
+});
+
+submit.addEventListener("click",() =>{
+  window.alert("Email enviado")
 });
