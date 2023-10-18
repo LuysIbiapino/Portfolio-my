@@ -1,6 +1,7 @@
+/* Importação de fonte */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+/* variaveis de cores */
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -16,18 +17,17 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables end */
+/*FIM DA VARIAVEIS DE COR*/
 
 html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
+/* Inicialização do CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 ul {
@@ -47,12 +47,7 @@ body {
   font-family: var(--font-family);
 }
 
-section {
-  /* max-width: 1100px;
-  margin: auto; */
-}
-
-/* CSS Resets end */
+/* FIM DA REINICIALIZAÇÃO */
 
 /* Navbar */
 nav {
@@ -98,9 +93,9 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
-/* Navbar ends */
+/* fim do Navbar  */
 
-/* Hero section */
+/* Sessão do 'sobre' e 'mais sobre mim' */
 .hero {
   display: flex;
   align-items: center;
@@ -130,7 +125,7 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
-/* Hero section ends */
+/* FIM DA SESSAO */
 
 /* More about */
 .more-about {

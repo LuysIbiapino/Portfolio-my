@@ -1,27 +1,28 @@
-// Nav hamburgerburger selections
+// Ativa o menu suspense
 const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
 
-// Scroll to top selection
+// ativa a funcionalidade para abrir os links que estão no menu 
+const ul = document.querySelector("nav ul");
+
+// após click a tela é levada para o topo
 const scrollUp = document.querySelector("#scroll-up");
 
-// Select nav links
+// todos os Links então âncorados na classe "nav-link"
 const navLink = document.querySelectorAll(".nav-link");
 
-// Hamburger menu function
+//Funcão do  menu suspense
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
 
-// Close hamburger menu when a link is clicked
+// Fecha o  menu suspense após clicar em algum link
 navLink.forEach((link) =>
   link.addEventListener("click", () => {
     ul.classList.remove("show");
   })
 );
 
-// scroll to top functionality
+// Função de elevação ao topo da tela
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
