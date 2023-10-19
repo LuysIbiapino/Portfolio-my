@@ -17,7 +17,6 @@ burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
 
-
 // Fecha o  menu suspense após clicar em algum link
 navLink.forEach((link) =>
   link.addEventListener("click", () => {
@@ -34,6 +33,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
+// Funcao que emite um alerta quando o  botão submit é clicado
 document.addEventListener("DOMContentLoaded", ()=>{
   document.getElementById("contact-form").addEventListener("submit", ()=>{
     window.alert("Email Enviado Com Sucesso")
